@@ -30,7 +30,7 @@ public enum Hand {
     }
 
     private int fight(Hand h) {
-        if (this == h) {
+        if (this == h) { // enumはシングルトンなので、オブジェクト比較できる
             return 0;
         } else if (calcHandPower(h)) {
             return 1;
