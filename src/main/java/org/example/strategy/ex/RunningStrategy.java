@@ -1,4 +1,4 @@
 package org.example.strategy.ex;
 
-public class RunningStrategy {
+public class RunningStrategy implements Strategy {
 }
