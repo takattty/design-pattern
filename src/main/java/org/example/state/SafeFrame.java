@@ -66,6 +66,11 @@ public class SafeFrame extends Frame implements ActionListener, Contexts {
         String clockstring = String.format("現在時刻は%02d:00", hour);
         System.out.println(clockstring);
         textClock.setText(clockstring);
+
+        // TODO: ここが大事。stateは既に状態を持っている。
+        // TODO: その状態を持つstateに時刻の設定を委譲しているので、「時刻の設定」=「現在の状態に依存した処理」が成立。
+        // TODO: State IFの処理は全て、現在の状態に依存した処理となる（=状態によって振る舞いが異なる処理）
+        // TODO: 理由はState IFの実装が「状態を持つクラス」で、その実装クラスで各自処理を行っているので、状態によって振る舞いが異なるという訳。
         state.doClock(this, hour);
     }
 

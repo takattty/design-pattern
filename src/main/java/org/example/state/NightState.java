@@ -12,6 +12,9 @@ public class NightState implements State {
     @Override
     public void doClock(Contexts contexts, int hour) {
         if (9 <= hour || hour < 7) {
+            // ここでDayStateのことを知らないといけないので、クラス間の依存関係が深まる
+            // TODO: 状態遷移専用のeunumを作ればいいのでは?自分のインスタンスを渡せば、NightStateから状態遷移できるやつだけに絞れるので。
+            // TODO: 簡単な状態遷移用のenumを作成する
             contexts.changeState(DayState.getInstance());
         }
     }
