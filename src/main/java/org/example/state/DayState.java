@@ -15,7 +15,8 @@ public class DayState implements State {
        if (hour < 9 || 17 <= hour) {
            // ここでNightStateのことを知らないといけないので、クラス間の依存関係が深まる
            // TODO: 状態遷移専用のeunumを作ればいいのでは?自分のインスタンスを渡せば、DayStateから状態遷移できるやつだけに絞れるので。
-           contexts.changeState(NightState.getInstance());
+//           contexts.changeState(NightState.getInstance());
+            contexts.changeState(this);
        }
     }
 

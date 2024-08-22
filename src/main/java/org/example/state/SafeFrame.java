@@ -78,7 +78,8 @@ public class SafeFrame extends Frame implements ActionListener, Contexts {
     @Override
     public void changeState(State state) {
         System.out.println(this.state + "から" + state + "へ状態が変化しました。");
-        this.state = state;
+         this.state = StateUtil.change(state);
+//        this.state = state;
     }
 
     // 警備センター警備員呼び出し
