@@ -1,6 +1,9 @@
 package org.example.state;
 
 public class DayState implements State {
+    // 次の疑問はここのシングルトンだな。
+    // これマルチスレッドだとどうなるんだっけ？グローバル変数？
+    // ただし自身のフィールド変数を持たないから、スレッドセーフで大丈夫？
     private static final DayState singleton = new DayState();
 
     private DayState() {

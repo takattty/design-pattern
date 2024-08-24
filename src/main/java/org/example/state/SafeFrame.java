@@ -12,7 +12,7 @@ public class SafeFrame extends Frame implements ActionListener, Contexts {
     private final Button buttonPhone = new Button("通常通話");    // 通常通話ボタン
     private final Button buttonExit = new Button("終了");         // 終了ボタン
 
-    private State state = DayState.getInstance();           // 現在の状態
+    private State state = StateUtil.DAY.getCode();// 現在の状態
 
     // コンストラクタ
     public SafeFrame(String title) {

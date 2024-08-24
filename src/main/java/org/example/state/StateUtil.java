@@ -14,6 +14,10 @@ public enum StateUtil {
         this.code = code;
     }
 
+    public State getCode() {
+        return this.code;
+    }
+
     // TODO: ここの状態遷移を別のデータ構造で持って、.changeStateとかで上手く遷移させたい。
     public static State change(State state) {
         if (state == DAY.code) {
