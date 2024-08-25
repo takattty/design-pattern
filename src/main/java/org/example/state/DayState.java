@@ -4,6 +4,9 @@ public class DayState implements State {
     // 次の疑問はここのシングルトンだな。
     // これマルチスレッドだとどうなるんだっけ？グローバル変数？
     // ただし自身のフィールド変数を持たないから、スレッドセーフで大丈夫？
+    // そもそもこいつがenumになればいいのでは？？？
+    // 他のサンプルコード見ても別にシングルトンではないので、ここは柔軟にしても良さそう
+    // https://github.com/iluwatar/java-design-patterns/tree/master/state/src/main/java/com/iluwatar/state
     private static final DayState singleton = new DayState();
 
     private DayState() {
