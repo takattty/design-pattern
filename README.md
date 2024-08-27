@@ -9,4 +9,13 @@
 > Core: Composite, Strategy, State, Command, Iterator, Proxy, Template Method, Facade\
 > Creational: Factory, Prototype, Builder, Dependency Injection\
 > Peripheral: Abstract Factory, Visitor, Decorator, Mediator, Type Object, Null Object, Extension Object\
-> Other: Flyweight, Interpreter5
+> Other: Flyweight, Interpreter
+
+1. Strategy
+2. Composite
+3. State
+4. Iterator
+5. Proxy
+6. Command
+7. Facade
+8. Template Method
