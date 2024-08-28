@@ -7,6 +7,8 @@ public class DayState implements State {
     // そもそもこいつがenumになればいいのでは？？？
     // 他のサンプルコード見ても別にシングルトンではないので、ここは柔軟にしても良さそう
     // https://github.com/iluwatar/java-design-patterns/tree/master/state/src/main/java/com/iluwatar/state
+    // いやここがenumではあんまり旨みがなさそうなことに気付いた
+    // 構造が大事なのはわかるが、もうちょい良い例が見たい
     private static final DayState singleton = new DayState();
 
     private DayState() {
@@ -21,7 +23,6 @@ public class DayState implements State {
        if (hour < 9 || 17 <= hour) {
            // ここでNightStateのことを知らないといけないので、クラス間の依存関係が深まる
            // TODO: 状態遷移専用のeunumを作ればいいのでは?自分のインスタンスを渡せば、DayStateから状態遷移できるやつだけに絞れるので。
-//           contexts.changeState(NightState.getInstance());
             contexts.changeState(this);
        }
     }
