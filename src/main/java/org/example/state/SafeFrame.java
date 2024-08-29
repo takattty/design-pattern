@@ -12,6 +12,9 @@ public class SafeFrame extends Frame implements ActionListener, Contexts {
     private final Button buttonPhone = new Button("通常通話");    // 通常通話ボタン
     private final Button buttonExit = new Button("終了");         // 終了ボタン
 
+    // ここの状態をどこで変更させるかも大事そう。
+    // 状態管理してるオブジェクトに渡すか、こっちでそのままやるか
+    // このままだとあまりStrategyと変わらないと思うので、ここも修正したい
     private State state = StateUtil.DAY.getCode();// 現在の状態
 
     // コンストラクタ
