@@ -15,6 +15,8 @@ public class SafeFrame extends Frame implements ActionListener, Contexts {
     // ここの状態をどこで変更させるかも大事そう。
     // 状態管理してるオブジェクトに渡すか、こっちでそのままやるか
     // このままだとあまりStrategyと変わらないと思うので、ここも修正したい
+    // 逆に普通のWebアプリだとどう生かせるか考えた方がいいな
+    // APIから呼び出すServiceの中の処理なのか、バッチ処理なのか、インポート処理なのかとか
     private State state = StateUtil.DAY.getCode();// 現在の状態
 
     // コンストラクタ
