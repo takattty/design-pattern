@@ -12,6 +12,7 @@ public class Main {
 
         // 明示的にIteratorを使う方法
         Iterator<Book> it = bookShelf.iterator();
+        // ここがBookShelf（Iterable）の実装に依存していないことが大事
         while (it.hasNext()) {
             Book book = it.next();
             System.out.println(book.getName());
