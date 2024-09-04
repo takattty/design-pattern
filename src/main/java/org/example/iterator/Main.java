@@ -20,6 +20,7 @@ public class Main {
         System.out.println();
 
         // 拡張for文を使う方法
+        // ここで拡張forを使えるのは、Iterable型
         for (Book book: bookShelf) {
             System.out.println(book.getName());
         }
