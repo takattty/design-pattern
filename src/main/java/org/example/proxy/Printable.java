@@ -1,7 +1,7 @@
 package org.example.proxy;
 
 public interface Printable {
-    public abstract void setPrinterName(String name);
-    public abstract String getPrinterName();
-    public abstract void print(String string);
+    void setPrinterName(String name);
+    String getPrinterName();
+    void print(String string);
 }

@@ -16,6 +16,7 @@ public class PrinterProxy implements  Printable {
 
     @Override
     public void setPrinterName(String name) {
+        // 代理で行っていたインスタンス化前の処理だが、既にインスタンス化が行われていればそっちを使うみたいなイメージ
         if (real != null) {
             real.setPrinterName(name);
         }
@@ -30,6 +31,8 @@ public class PrinterProxy implements  Printable {
 
     @Override
     public void print(String string) {
+        // ここでPrinterクラスの生成とメソッド実行を行っている
+        // 継承っぽいけど、違うのかな？移譲になってる？
         realize();
         real.print(string);
     }

@@ -9,6 +9,7 @@ public class Printer implements Printable {
 
     public Printer(String name) {
         this.name = name;
+        // ここの処理を遅らせているのが大事らしい
         heavyJob("Printerのインスタンス（" + name + "）を生成中");
     }
 
