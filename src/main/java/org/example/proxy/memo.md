@@ -36,3 +36,8 @@ claude.aiの説明
 3. どういう解決策か
    1. Proxyにある程度行いたいことを隠して、利用側はProxyを介して処理を行う
    2. アクセス制御や必要に応じた生成、不要な責務の引き受けなどを行うイメージ
+
+
+ある処理に集中したいが、それ以外にもやることがある時に有効な手段っぽい。\
+AOPやDIも似た感じ。共通したログやエラーハンドリング辺りで同じ話が出てきた気がする。\
+[今こそ知りたいSpring DI x AOP #jsug | ドクセル](https://www.docswell.com/s/MasatoshiTada/Z818E5-spring-di-aop-for-every-developers#p56)
