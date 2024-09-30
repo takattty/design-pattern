@@ -14,6 +14,7 @@ public class BookDatabase {
 
     public Book findBook(String isbn) {
         // データベースアクセスを模倣するための遅延
+        // ここの処理が重いので、必要になるまでこのクラスのインスタンス化をしない様なイメージ？
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

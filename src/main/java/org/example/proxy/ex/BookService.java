@@ -4,6 +4,7 @@ public class BookService {
     private final BookDatabase database;
 
     public BookService() {
+        // ここでdatabaseがnullなのかどうかを判断して、あればキャッシュを返すでもいいかも
         this.database = new BookDatabase();
     }
 
