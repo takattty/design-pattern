@@ -10,9 +10,9 @@ public class OnlineBookstore {
 
         if (book != null) {
             System.out.println("書籍情報:");
-            System.out.println("ISBN: " + book.getIsbn());
-            System.out.println("タイトル: " + book.getTitle());
-            System.out.println("価格: " + book.getPrice() + "円");
+            System.out.println("ISBN: " + book.isbn());
+            System.out.println("タイトル: " + book.title());
+            System.out.println("価格: " + book.price() + "円");
         } else {
             System.out.println("書籍が見つかりません。");
         }

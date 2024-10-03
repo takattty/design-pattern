@@ -15,14 +15,14 @@ public class Main {
         // ここがBookShelf（Iterable）の実装に依存していないことが大事
         while (it.hasNext()) {
             Book book = it.next();
-            System.out.println(book.getName());
+            System.out.println(book.name());
         }
         System.out.println();
 
         // 拡張for文を使う方法
         // ここで拡張forを使えるのは、Iterable型
         for (Book book: bookShelf) {
-            System.out.println(book.getName());
+            System.out.println(book.name());
         }
         System.out.println();
     }

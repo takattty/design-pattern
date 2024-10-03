@@ -6,12 +6,7 @@ public enum Weather {
     RAINY(2, "雨"),
     SNOY(3, "雪");
 
-    private final int value;
-    private final String weatherName;
-
     Weather(int value, String weatherName) {
-        this.value = value;
-        this.weatherName = weatherName;
     }
 
     public static Weather getWeather(int value) {

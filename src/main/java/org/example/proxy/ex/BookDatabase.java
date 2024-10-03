@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BookDatabase {
-    private Map<String, Book> books = new HashMap<>();
+    private final Map<String, Book> books = new HashMap<>();
 
     public BookDatabase() {
         // サンプルデータの追加
