@@ -1,12 +1,12 @@
 package org.example.strategy.ex;
 
 public enum Weather {
-    SUNNY(0, "晴れ"),
-    COUDY(1, "曇り"),
-    RAINY(2, "雨"),
-    SNOY(3, "雪");
+    SUNNY(),
+    COUDY(),
+    RAINY(),
+    SNOY();
 
-    Weather(int value, String weatherName) {
+    Weather() {
     }
 
     public static Weather getWeather(int value) {

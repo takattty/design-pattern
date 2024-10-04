@@ -19,10 +19,9 @@ public class ProbStrategy implements Strategy {
     @Override
     public Hand nextHand() {
         int bet = random.nextInt(getSum(currentHandValue));
-        int handValue = 0;
+        int handValue;
 
         if (bet < history[currentHandValue][0]) {
-            handValue = 0;
         } else if (bet < history[currentHandValue][0] + history[currentHandValue][1]) {
             handValue = 1;
         } else {
