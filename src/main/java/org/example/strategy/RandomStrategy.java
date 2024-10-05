@@ -3,7 +3,7 @@ package org.example.strategy;
 import java.util.Random;
 
 public class RandomStrategy implements Strategy {
-    private Random random;
+    private final Random random;
 
     public RandomStrategy(int seed) {
         random = new Random(seed);

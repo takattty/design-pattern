@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 
 // 処理を繰り返す反復子を表すIF
 public class BookShelfIterator implements Iterator<Book> {
-    private BookShelf bookShelf;
+    private final BookShelf bookShelf;
     private int index;
 
     public BookShelfIterator(BookShelf bookShelf) {

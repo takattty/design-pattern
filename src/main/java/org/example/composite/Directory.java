@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Directory extends Entry {
-    private String name;
-    private List<Entry> directory = new ArrayList<>();
+    private final String name;
+    private final List<Entry> directory = new ArrayList<>();
 
     public Directory(String name) {
         this.name = name;

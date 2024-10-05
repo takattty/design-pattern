@@ -1,8 +1,8 @@
 package org.example.composite;
 
 public class File extends Entry {
-    private String name;
-    private int size;
+    private final String name;
+    private final int size;
 
     public File(String name, int size) {
         this.name = name;

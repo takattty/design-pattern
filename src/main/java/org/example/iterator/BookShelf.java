@@ -6,7 +6,7 @@ import java.util.Iterator;
 // その実装クラスなので、「何かが沢山集まっているもの」を表現している
 // なのでBookが集まっているクラスとなる(=本棚)
 public class BookShelf implements Iterable<Book> {
-    private Book[] books;
+    private final Book[] books;
     private int last = 0;
 
     public BookShelf(int maxsize) {
