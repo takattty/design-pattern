@@ -41,3 +41,5 @@ claude.aiの説明
 ある処理に集中したいが、それ以外にもやることがある時に有効な手段っぽい。\
 AOPやDIも似た感じ。共通したログやエラーハンドリング辺りで同じ話が出てきた気がする。\
 [今こそ知りたいSpring DI x AOP #jsug | ドクセル](https://www.docswell.com/s/MasatoshiTada/Z818E5-spring-di-aop-for-every-developers#p56)
+
+透過性や遅延評価、制御周りで必要性が出そうな感じ
